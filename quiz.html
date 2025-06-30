@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Welcome to Quiz Master</h1>
+        <div id="selection-container">
+            <label for="class-select">Choose Class:</label>
+            <select id="class-select">
+                <option value="1">Class 1</option>
+                <option value="2">Class 2</option>
+                <option value="12">Class 12</option>
+            </select>
+
+            <label for="subject-select">Choose Subject:</label>
+            <select id="subject-select">
+                <option value="gk">General Knowledge</option>
+                <option value="computer">Computer Science</option>
+                <option value="history">History</option>
+                <option value="geography">Geography</option>
+                <option value="math">Mathematics</option>
+                <option value="science">Science</option>
+            </select>
+
+            <button id="start-button" onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="question-container"></div>
+        <div id="answers-container"></div>
+        <button id="next-button" onclick="nextQuestion()">Next</button>
+        <div id="score-container">
+            <p>Your score: <span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
