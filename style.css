@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #5c6bc0, #ab47bc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+#quiz-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#quiz-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #4caf50;
+}
+
+#selection-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+}
+
+#start-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #45a049;
+}
+
+#question-container {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button.answer-button {
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.answer-button:hover {
+    background-color: #e7e7e7;
+    transform: scale(1.05);
+}
+
+#next-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+    background-color: #d32f2f;
+}
+
+#score-container {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 1.4rem;
+    color: #4caf50;
+}
